@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок з Python - Розділ 5: Автоматизація завдань зі списками</title>
+    <link rel="stylesheet" href="css/lesson1.css">
+</head>
+<body>
+ <!-- HEADER -->
+ <header class="site-header">
+    <div class="hed-container">
+        <h1 class="site-title">Python Academy</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- HEADER END -->
+    <div class="container">
+        <p class="text-povernena-na-golovny"><a class="povernena-na-golovny" href="lessons.html "> ← повернутися до уроків</a></p>    
+        <h1>Урок з Python - Розділ 5: Автоматизація завдань зі списками</h1>
+        <div>
+            <span class="tag">Створення списків</span>
+            <span class="tag">Додавання та видалення елементів</span>
+            <span class="tag">Перегляд списків</span>
+            <span class="tag">Сортування списків</span>
+            <span class="tag">Аналіз даних у списках</span>
+            <span class="tag">Довідкові документи</span>
+        </div>
+
+        <div class="section">
+            <h2>1. Створення списків</h2>
+            <p>Списки в Python - це тип даних, який дозволяє зберігати колекцію елементів. Їх можна створити за допомогою квадратних дужок, і вони підтримують різні типи даних.</p>
+            <div class="code-box">
+                <code>
+                    міста = ["Київ", "Львів", "Одеса", "Харків"]<br>
+                    числа = [1, 2, 3, 4, 5]
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Додавання та видалення елементів</h2>
+            <p>Ми можемо додавати елементи до списку за допомогою методу <code>append()</code>, а видаляти - за допомогою методів <code>remove()</code> або <code>pop()</code>.</p>
+            <div class="code-box">
+                <code>
+                    міста.append("Дніпро")  # Додаємо елемент<br>
+                    міста.remove("Львів")  # Видаляємо елемент за значенням<br>
+                    видалений_елемент = міста.pop()  # Видаляємо останній елемент
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Перегляд списків</h2>
+            <p>Списки можна переглядати, використовуючи цикли, що дозволяє обробляти кожен елемент у списку. Це корисно для аналізу та обробки даних.</p>
+            <div class="code-box">
+                <code>
+                    for місто in міста:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(місто)
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Сортування списків</h2>
+            <p>Python дозволяє сортувати списки за допомогою методу <code>sort()</code> для змінних списків або функції <code>sorted()</code> для створення відсортованих копій списків.</p>
+            <div class="code-box">
+                <code>
+                    числа = [5, 3, 8, 1, 9]<br>
+                    числа.sort()  # Сортування списку<br>
+                    print("Відсортовані числа:", числа)
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Аналіз даних у списках</h2>
+            <p>Можна використовувати різні методи для аналізу даних у списках, як-от <code>min()</code>, <code>max()</code>, <code>sum()</code>, щоб отримувати важливу інформацію.</p>
+            <div class="code-box">
+                <code>
+                    числа = [1, 2, 3, 4, 5]<br>
+                    print("Максимальне значення:", max(числа))<br>
+                    print("Мінімальне значення:", min(числа))<br>
+                    print("Сума:", sum(числа))
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Довідкові документи</h2>
+            <p>Додаткові ресурси для вивчення роботи зі списками в Python:</p>
+            <ul>
+                <li><a href="https://docs.python.org/uk/" target="_blank">Документація Python</a></li>
+                <li>Книги з Python, відеокурси та статті для додаткового вивчення.</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="foot-container">
+        <p>&copy; 2024 Python Academy. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

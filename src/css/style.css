@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+
+.site-header {
+    background-color: #002366; /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.site-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+/* HEADER */
+
+.intro-section {
+    background-color: #f4f4f4; /* Light Gray Background */
+    height: auto; /* Изменено на auto для адаптивности */
+    min-height: 600px; /* Минимальная высота для больших экранов */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Добавлен отступ для мобильных устройств */
+  }
+
+  .intro-section .container {
+    width: 80%; /* Уменьшено для лучшей адаптации */
+    max-width: 1200px; /* Ограничиваем ширину для больших экранов */
+    display: flex;
+    flex-direction: column; /* Изменено на column для лучшей адаптивности */
+    align-items: center;
+    text-align: center; /* Центрирование текста */
+    gap: 20px; /* Добавлен промежуток между элементами */
+  }
+
+  .intro-section h2 {
+    font-size: 2rem;
+    color: #002366; /* Dark Blue */
+    margin-bottom: 10px;
+  }
+
+  .intro-section p {
+    width: 80%; /* Занимает всю ширину контейнера */
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin: 0; /* Убираем внешний отступ */
+  }
+
+  /* Медиазапросы для адаптивности */
+  @media (max-width: 768px) {
+    .intro-section {
+      padding: 20px; /* Увеличиваем отступы на меньших экранах */
+    }
+    .intro-section h2 {
+      font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка на планшетах */
+    }
+    .intro-section p {
+      font-size: 1rem; /* Уменьшаем размер шрифта текста на планшетах */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .intro-section h2 {
+      font-size: 1.2rem; /* Еще меньше размер шрифта на мобильных устройствах */
+    }
+    .intro-section p {
+      font-size: 0.9rem; /* Уменьшаем шрифт еще больше на мобильных */
+    }
+  }
+  /**/
+  .plus {
+    background-color: #f0f0f0;
+    padding: 40px 10px 60px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .fact-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* Делаем блоки в три колонки */
+    box-sizing: border-box;
+  }
+  .fact-title {
+    font-size: 18px;
+    color: #306998;
+    margin-bottom: 10px;
+  }
+  .fact-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  @media (max-width: 768px) {
+    .fact-box {
+      width: calc(50% - 20px); /* Меняем на две колонки на меньших экранах */
+    }
+  }
+  @media (max-width: 480px) {
+    .fact-box {
+      width: 100%; /* Одноколоночный вид на самых маленьких экранах */
+    }
+  }
+
+/**/
+a{
+    text-decoration: none;
+}
+.lessons{
+    width: 100%;
+    height: auto;
+    background: #FAFAFA;
+    padding-top: 40px;
+    display: flex;
+}
+.center{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.textup{
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #1D293F;
+}
+
+.color{
+    margin: auto;
+    width: 73%;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    margin-top: 20px;
+}
+.card{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#card1{
+    background-color: #D3E8FF;
+}
+#card2{
+    background-color: #FFCCE7;
+}
+#card3{
+    background-color: #27AE60;
+    opacity: 0.2;
+}
+#card4{
+    background-color: #E74C3C;
+    opacity: 0.2;
+}
+#card5{
+    background-color: #9B59B6;
+    opacity: 0.2;
+}
+#card6{
+    background-color: #f8ba00;
+    opacity: 0.2;
+}
+.textboxs{
+    width: 79%;
+    height: 94px;
+    position: relative;
+    gap: 20px;
+}
+.textboxs h1{
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: auto; 
+    color: #1D293F;
+}
+.textboxs h2{
+    font-size: 21px;
+    font-weight: 450;
+    margin-bottom: 0px; 
+    color: #1D293F;
+    word-break: break-all;
+}
+@media (max-width: 562px) {
+  .textboxs h1{
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: auto; 
+    color: #1D293F;
+}
+.textboxs h2{
+  font-size: 15px;
+  font-weight: 450;
+  margin-bottom: 0px; 
+  color: #1D293F;
+  word-break: break-all;
+}
+}
+
+/* FOOTER*/
+.site-footer {
+    background-color: #002366; /* Dark Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

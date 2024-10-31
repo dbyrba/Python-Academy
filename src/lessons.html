@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Academy - Уроки</title>
+    <link rel="stylesheet" href="css/lessons.css">
+</head>
+<body>
+   <!-- HEADER -->
+   <header class="site-header">
+    <div class="container">
+        <h1 class="site-title">Python Academy</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <!-- Иконка меню для малых экранов -->
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    </div>
+</header>
+<!-- HEADER END -->
+
+<div class="container-lesson">
+    <!-- Боковая панель -->
+    <aside class="sidebar" id="sidebar">
+        <h2>Вступ до інформатики - Python</h2>
+        <p>6 Розділів - 21 Уроки</p>
+        <nav>
+            <ul>
+                <li class="unit"><a href="#" onclick="showLesson(0)">Розділ 1: Обчислювальне мислення зі змінними</a></li>
+                <li class="unit"><a href="#" onclick="showLesson(1)">Розділ 2: Розробка алгоритмів з умовними операторами</a></li>
+                <li class="unit"><a href="#" onclick="showLesson(2)">Розділ 3: Моделювання явищ за допомогою циклів</a></li>
+                <li class="unit"><a href="#" onclick="showLesson(3)">Розділ 4: Ігри з функціями</a></li>
+                <li class="unit"><a href="#" onclick="showLesson(4)">Розділ 5: Автоматизація завдань зі списками</a></li>
+                <li class="unit"><a href="#" onclick="showLesson(5)">Розділ 6: Аналіз даних за допомогою словників</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <h1 id="lesson-title">Розділ 1: Обчислювальне мислення зі змінними</h1>
+        <div class="unit-info">
+            <h2>Про цей розділ</h2>
+            <p id="lesson-description">
+                Чим спосіб обробки інформації комп’ютером відрізняється від способу обробки інформації людьми? Дізнайтеся, як комп’ютери інтерпретують послідовність і стан під час написання, запуску та налагодження своїх перших програм Python.
+            </p>
+        </div>
+        <div class="unit-info">
+            <h2>На уроці ви дізнаєтеся</h2>
+            <ul class="mini-lectures" id="mini-lectures-list">
+                <li onclick="showMiniLecture(1)">Платформа програмування</li>
+                <li onclick="showMiniLecture(2)">Виконання програми</li>
+                <li onclick="showMiniLecture(3)">Змінні</li>
+                <li onclick="showMiniLecture(4)">Арифметичні вирази</li>
+                <li onclick="showMiniLecture(5)">Шаблони веб-сторінок</li>
+                <li onclick="showMiniLecture(6)">Довідкові документи</li>
+            </ul>
+            <button id="backToLectures" onclick="backToMiniLectures()">Назад к мини-лекциям</button>
+            <div id="miniLectureContent">
+                <p>Виберіть міні-лекцію, щоб переглянути її зміст.</p>
+            </div>
+        </div>
+        <div class="unit-info">
+            <a id="lesson-link" href="lesson1.html" class="lesson-link">➞ Перейти до повного уроку</a>
+        </div>
+    </main>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2024 Python Academy. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+<script src="js/lessons.js"></script>

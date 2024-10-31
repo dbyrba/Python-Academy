@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс с уроками и мини-лекциями</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <div class="course-container">
+        <h1>Курс: 6 уроков</h1>
+        <div class="lessons">
+            <ul id="lessonTabs">
+                <!-- Вкладки для уроков -->
+                <li onclick="showLesson(1)" class="active">Урок 1</li>
+                <li onclick="showLesson(2)">Урок 2</li>
+                <li onclick="showLesson(3)">Урок 3</li>
+                <li onclick="showLesson(4)">Урок 4</li>
+                <li onclick="showLesson(5)">Урок 5</li>
+                <li onclick="showLesson(6)">Урок 6</li>
+            </ul>
+        </div>
+
+        <!-- Секции для уроков -->
+        <div id="lessonContent">
+            <div class="lesson" id="lesson1">
+                <h2>Урок 1</h2>
+                <ul class="mini-lectures">
+                    <li onclick="showMiniLecture(1)">Мини-лекция 1</li>
+                    <li onclick="showMiniLecture(2)">Мини-лекция 2</li>
+                    <li onclick="showMiniLecture(3)">Мини-лекция 3</li>
+                    <li onclick="showMiniLecture(4)">Мини-лекция 4</li>
+                    <li onclick="showMiniLecture(5)">Мини-лекция 5</li>
+                    <li onclick="showMiniLecture(6)">Мини-лекция 6</li>
+                </ul>
+                <button id="backToLectures" onclick="backToMiniLectures()">Назад к мини-лекциям</button>
+                <div id="miniLectureContent">
+                    <p>Выберите мини-лекцию для просмотра ее содержания.</p>
+                </div>
+            </div>
+            <!-- Аналогично добавьте div с id="lesson2" до id="lesson6" -->
+        </div>
+    </div>
+
+    <script src="les.js"></script>
+</body>
+</html>

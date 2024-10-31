@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок з Python - Розділ 4: Ігри з функціями</title>
+    <link rel="stylesheet" href="css/lesson1.css">
+</head>
+<body>
+ <!-- HEADER -->
+ <header class="site-header">
+    <div class="hed-container">
+        <h1 class="site-title">Python Academy</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- HEADER END -->
+    <div class="container">
+        <p class="text-povernena-na-golovny"><a class="povernena-na-golovny" href="lessons.html "> ← повернутися до уроків</a></p>    
+        <h1>Урок з Python - Розділ 4: Ігри з функціями</h1>
+        <div>
+            <span class="tag">Створення функцій</span>
+            <span class="tag">Параметри та аргументи</span>
+            <span class="tag">Повернення значень</span>
+            <span class="tag">Використання випадкових значень</span>
+            <span class="tag">Гра “Вгадай число”</span>
+            <span class="tag">Довідкові документи</span>
+        </div>
+
+        <div class="section">
+            <h2>1. Створення функцій</h2>
+            <p>Функції дозволяють структурувати код і використовувати його повторно. Щоб створити функцію в Python, використовуйте ключове слово <code>def</code>, ім'я функції та круглі дужки. Код, що знаходиться всередині функції, виконується при виклику цієї функції.</p>
+            <div class="code-box">
+                <code>
+                    def привітання():<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Привіт! Ласкаво просимо до нашої гри!")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Параметри та аргументи</h2>
+            <p>Функції можуть приймати параметри, які дозволяють передавати дані у функцію під час її виклику. Це робить функцію гнучкою і здатною працювати з різними значеннями.</p>
+            <div class="code-box">
+                <code>
+                    def привітання(ім'я):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Привіт,", ім'я, "! Ласкаво просимо до гри!")<br><br>
+
+                    привітання("Олексій")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Повернення значень</h2>
+            <p>Функція може повернути результат, використовуючи ключове слово <code>return</code>. Це дозволяє передавати обчислене значення з функції в програму.</p>
+            <div class="code-box">
+                <code>
+                    def додати(а, б):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return а + б<br><br>
+
+                    результат = додати(3, 5)<br>
+                    print("Результат:", результат)
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Використання випадкових значень</h2>
+            <p>Для створення випадкових чисел в Python можна використовувати модуль <code>random</code>. Це корисно для створення ігор, де потрібні випадкові значення.</p>
+            <div class="code-box">
+                <code>
+                    import random <br><br>
+
+                    випадкове_число = random.randint(1, 10)<br>
+                    print("Випадкове число від 1 до 10:", випадкове_число)
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Гра “Вгадай число”</h2>
+            <p>Давайте створимо просту гру "Вгадай число", в якій користувач повинен вгадати випадкове число від 1 до 10. Гра буде використовувати функції, випадкові значення і цикли для організації ігрового процесу.</p>
+            <div class="code-box">
+                <code>
+                    import random <br><br>
+
+                    def гра_вгадай_число():<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;число = random.randint(1, 10)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;спроба = 0<br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;while True:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;введене_число = int(input("Вгадай число від 1 до 10: "))<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;спроба += 1<br><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if введене_число == число:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Вітаю! Ви вгадали число за", спроба, "спроб.")<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;elif введене_число < число:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Загадане число більше.")<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Загадане число менше.")<br><br>
+
+                    гра_вгадай_число()
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Довідкові документи</h2>
+            <p>Для додаткового ознайомлення з функціями у Python рекомендується ознайомитися з офіційною документацією та іншими ресурсами:</p>
+            <ul>
+                <li><a href="https://docs.python.org/uk/" target="_blank">Документація Python</a></li>
+                <li>Онлайн-курси з програмування, форуми та книги з Python.</li>
+            </ul>
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="foot-container">
+        <p>&copy; 2024 Python Academy. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

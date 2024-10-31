@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок з Python - Розробка алгоритмів з умовними операторами</title>
+    <link rel="stylesheet" href="css/lesson1.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="hed-container">
+            <h1 class="site-title">Python Academy</h1>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="lessons.html">Уроки</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+    </header>
+<!-- HEADER END -->
+
+    <div class="container">
+        <p class="text-povernena-na-golovny"><a class="povernena-na-golovny" href="lessons.html "> ← повернутися до уроків</a></p>   
+        <h1>Урок з Python - Розділ 2: Розробка алгоритмів з умовними операторами</h1>
+        <div>
+            <span class="tag">Логічні умови</span>
+            <span class="tag">Складені булеві вирази</span>
+            <span class="tag">Ланцюгові умови</span>
+            <span class="tag">Вкладені умови</span>
+            <span class="tag">Вироблення рекомендацій</span>
+            <span class="tag">Довідкові документи</span>
+        </div>
+
+        <div class="section">
+            <h2>1. Вступ до логічних умов</h2>
+            <p>Умовні оператори у Python допомагають приймати рішення залежно від результату певного виразу. Основний оператор для створення умов — <code>if</code>. Логічні умови дозволяють перевірити, чи є вираз істинним чи хибним, і, залежно від цього, виконати певні дії.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Складені булеві вирази</h2>
+            <p>У Python можна об’єднувати кілька логічних умов, використовуючи оператори <code>and</code>, <code>or</code> та <code>not</code>. Це дозволяє створювати більш складні умови.</p>
+            <div class="code-box">
+                <code>
+                    age = 20 <br>
+                    is_student = True <br><br>
+
+                    if age >= 18 and is_student: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Доступ дозволено.") <br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Доступ заборонено.")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Ланцюгові умови</h2>
+            <p>Ланцюгові умови дозволяють обробляти кілька можливих сценаріїв за допомогою операторів <code>if</code>, <code>elif</code> і <code>else</code>. Це особливо корисно, коли є декілька варіантів розвитку подій.</p>
+            <div class="code-box">
+                <code>
+                    grade = 85 <br><br>
+
+                    if grade >= 90:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Оцінка: A") <br>
+                    elif grade >= 80:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Оцінка: B") <br>
+                    elif grade >= 70:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Оцінка: C") <br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Оцінка: D")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Вкладені умови</h2>
+            <p>Вкладені умови дозволяють перевіряти додаткові умови всередині інших умов. Це корисно, коли для прийняття рішення потрібно врахувати кілька різних факторів одночасно.</p>
+            <div class="code-box">
+                <code>
+                    is_registered = True <br>
+                    has_ticket = True <br><br>
+
+                    if is_registered:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if has_ticket:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Вхід дозволено.") <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Квиток потрібен для входу.") <br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Будь ласка, зареєструйтесь.")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Вироблення рекомендацій</h2>
+            <p>На основі умов можна створювати рекомендації або приймати рішення в коді, враховуючи кілька факторів. Наприклад, можна поєднувати умови для створення рекомендацій для користувача, ґрунтуючись на його відповіді або діях.</p>
+            <div class="code-box">
+                <code>
+                    age = 16 <br>
+                    has_permission = False <br><br>
+
+                    if age >= 18:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Ви можете взяти участь.") <br>
+                    elif age >= 16 and has_permission:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Ви можете взяти участь з дозволом.") <br>
+                    else:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Ви не можете взяти участь.")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Довідкові документи</h2>
+            <p>Для додаткового ознайомлення з умовними операторами у Python рекомендується переглянути офіційну документацію та інші ресурси:</p>
+            <ul>
+                <li><a href="https://docs.python.org/uk/" target="_blank">Документація Python</a></li>
+                <li>Книги з Python, онлайн-курси, форуми.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+<footer class="site-footer">
+    <div class="foot-container">
+        <p>&copy; 2024 Python Academy. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>

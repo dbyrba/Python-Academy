@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок з Python - Розділ 3: Моделювання явищ за допомогою циклів</title>
+    <link rel="stylesheet" href="css/lesson1.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="hed-container">
+        <h1 class="site-title">Python Academy</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- HEADER END -->
+    <div class="container">
+        <p class="text-povernena-na-golovny"><a class="povernena-na-golovny" href="lessons.html "> ← повернутися до уроків</a></p>   
+        <h1>Урок з Python - Розділ 3: Моделювання явищ за допомогою циклів</h1>
+        <div>
+            <span class="tag">Імпорт модулів</span>
+            <span class="tag">Цикл while</span>
+            <span class="tag">Повторювання</span>
+            <span class="tag">Потік керування циклом</span>
+            <span class="tag">Моделювання популяцій</span>
+            <span class="tag">Довідкові документи</span>
+        </div>
+
+        <div class="section">
+            <h2>1. Вступ до циклів у Python</h2>
+            <p>Цикли дозволяють повторювати певні дії декілька разів, що є особливо корисним для моделювання різних явищ. У цьому розділі ми розглянемо базові цикли в Python, такі як <code>while</code>, та методи керування потоком всередині цих циклів.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Імпорт модулів</h2>
+            <p>Для моделювання більш складних явищ можна імпортувати спеціальні модулі Python, наприклад, <code>math</code> або <code>random</code>. Це розширює можливості коду і додає додаткові функції, такі як генерація випадкових чисел чи обчислення математичних виразів.</p>
+            <div class="code-box">
+                <code>
+                    import random <br>
+                    import math
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Використання циклу while</h2>
+            <p>Цикл <code>while</code> повторює блок коду, поки умова істинна. Це основний цикл, який часто використовується для моделювання процесів, що потребують невизначену кількість повторень.</p>
+            <div class="code-box">
+                <code>
+                    count = 0 <br><br>
+
+                    while count < 5:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Повторення №", count) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;count += 1
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Потік керування циклом</h2>
+            <p>Python дозволяє керувати потоком циклу за допомогою команд <code>break</code> та <code>continue</code>. <code>break</code> виходить з циклу, а <code>continue</code> пропускає ітерацію та переходить до наступної.</p>
+            <div class="code-box">
+                <code>
+                    count = 0 <br><br>
+
+                    while count < 10:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if count == 5:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;if count % 2 == 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count += 1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print("Непарне число:", count) <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;count += 1
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Моделювання популяцій</h2>
+            <p>Цикли можна використовувати для моделювання росту популяцій або подібних процесів. Наприклад, використовуючи цикл <code>while</code>, ми можемо моделювати збільшення популяції, враховуючи певний коефіцієнт росту та випадкові коливання.</p>
+            <div class="code-box">
+                <code>
+                    import random <br><br>
+
+                    population = 1000<br>
+                    growth_rate = 1.02<br>
+                    years = 0<br><br>
+
+                    while population < 2000:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;population *= growth_rate <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;population += random.randint(-10, 10)  # випадкове коливання <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;years += 1<br>
+                    print("Популяція досягла 2000 за", years, "років.")
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Довідкові документи</h2>
+            <p>Для детального ознайомлення з циклічними операторами та модулями у Python рекомендується використовувати офіційну документацію та додаткові ресурси:</p>
+            <ul>
+                <li><a href="https://docs.python.org/uk/" target="_blank">Документація Python</a></li>
+                <li>Онлайн-курси з програмування, книги та форуми.</li>
+            </ul>
+        </div>
+    </div>
+    
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="foot-container">
+        <p>&copy; 2024 Python Academy. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+
+</body>
+</html>
